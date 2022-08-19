@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+void main()
+{
+	int a[50],n,i,temp,fact;
+	printf("enter the no. of elements:");
+	scanf("%d",&n);
+	printf("enter the elements:");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		fact=1;
+		temp=a[i];
+		while(temp>0)
+		{
+			fact=fact*temp;
+			temp--;
+		}
+		printf("factorial of %d is %d\n",a[i],fact);
+	}
+}
