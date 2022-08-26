@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+void main()
+{
+	char a[100];
+	int u=0,s=0,n=0,i;
+	scanf("%s",&a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		if(isupper(a[i]))
+		u++;
+		else if(islower(a[i]))
+		s++;
+		else if(isxdigit(a[i]))
+		n++;
+	}
+	printf("count of uppercase characters:%d\n",u);
+	printf("count of lowercase characters:%d\n",s);
+	printf("count of numbers:%d",n);
+}
