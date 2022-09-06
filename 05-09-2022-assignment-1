@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+void main()
+{
+	int n,m;
+	scanf("%d %d",&n,&m);
+	num(n,m);
+}
+void num(int n,int m)
+{
+	if(n<=m)
+	{
+		printf("%d\t",n);
+		num(n+1,m);
+	}
+}
